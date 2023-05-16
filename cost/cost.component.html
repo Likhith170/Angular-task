@@ -1,0 +1,9 @@
+<label>
+    Quantity:
+    <input type="number" [(ngModel)]="quantity">
+  </label>
+  <label>
+    Price per unit:
+    <input type="number" [(ngModel)]="price">
+  </label>
+  <p>Total cost: {{ calculateTotalCost() | currency }}</p>
